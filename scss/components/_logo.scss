@@ -1,0 +1,15 @@
+.logo {
+    &--nav
+    
+        &--mobile {
+            @media ( min-width: 376px ) {
+                display: none;
+            }
+
+        &--desktop {
+            @media ( min-width: 376px ) {
+                display: inline-block;
+            }
+        }
+    }
+}

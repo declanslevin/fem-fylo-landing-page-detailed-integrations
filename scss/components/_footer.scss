@@ -1,0 +1,144 @@
+.footer {
+    background-color: $color-dark-blue;
+    color: white;
+    text-align: left;
+    padding-top: 100px;
+
+    .container {
+        @media ( min-width: 376px ) {
+            display: flex; 
+            flex-direction: column;
+            
+        }
+
+        @media ( min-width: 900px ) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    p {
+        color: white;
+    }
+
+    &--content {
+
+        @media ( min-width: 376px ) {
+            max-width: 520px;
+        }
+
+        &__logo {
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            color: white;
+            padding-bottom: 20px;
+
+            @media ( min-width: 376px ) {
+                font-weight: 600;
+            }
+        }
+
+        &--input-wrapper {
+            @media ( min-width: 376px ) {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding-bottom: 30px;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border-style: none;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+
+            @media ( min-width: 376px ) {
+                margin: 0;
+                justify-self: stretch;
+                flex-basis: 66%;
+            }
+        }
+
+        &__button {
+            background-color: $color-green;
+            color: white;
+            border-style: none;
+            font-size: 1.2rem;
+            font-family: $font-family-body;
+            padding: 10px 50px;
+            border-radius: 3px;
+            display: block;
+            margin-right: 5px;
+            margin-left: auto;
+            margin-bottom: 40px;
+            cursor: pointer;
+
+            @media ( min-width: 376px ) {
+                display: inline-block;
+                margin-left: 10px;
+                margin-bottom: 0;
+                flex-basis: 33%;
+                align-self: stretch;
+            }
+        }
+
+        &--contact {
+            &__phone { 
+                padding-bottom: 20px;
+            }
+
+            &__email {
+                padding-bottom: 115px;
+            }
+
+        }
+    }
+
+    &--links {
+        
+        &__header {
+            font-weight: 700;
+        }
+
+        li:not(:last-child) {
+            padding-bottom: 25px;
+        }
+
+        li:last-child {
+            padding-bottom: 90px;
+        }
+
+        &--wrapper {
+            @media ( min-width: 376px ) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @media ( min-width: 430px ) {
+                flex-direction: row;
+                flex-basis: 50%;
+                justify-content: space-around;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.contact__ {
+    &phone {
+        content: url("../../images/icon-phone.svg");
+        padding-right: 20px;
+    }
+
+    &email {
+        content: url("../../images/icon-email.svg");
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+.cta {
+    display: inline-block;
+    background-color: $color-green;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 3px;
+
+    &:not(.nav--item__link) {
+        padding: 20px 70px;
+        font-weight: 600;
+        box-shadow: 3px 3px 4px 4px hsla(0, 0, 50%, 0.15);
+    }
+}
